@@ -71,7 +71,7 @@ export const ControlledCheckbox: Story = () => {
 export const ControlledSelect: Story = () => {
    const [parentValue, setParentValue] = useState<string|undefined>("1")
    const onChange = (e: ChangeEvent<HTMLSelectElement>) => {
-      setParentValue((e.currentTarget.value))
+      setParentValue(e.currentTarget.value)
    }
 
    return (
